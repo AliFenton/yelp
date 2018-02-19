@@ -1,52 +1,16 @@
-<<<<<<< HEAD
-### Basic Yelp client
-
-This is a headless example of how to implement an OAuth 1.0a Yelp API client. The Yelp API provides an application token that allows applications to make unauthenticated requests to their search API.
-
-### Next steps
-
-- Check out `BusinessesViewController.swift` to see how to use the `Business` model.
-
-### Sample request
-
-**Basic search with query**
-
-```
-Business.searchWithTerm("Thai", completion: { (businesses: [Business]!, error: Error!) -> Void in
-    self.businesses = businesses
-    
-    for business in businesses {
-        print(business.name!)
-        print(business.address!)
-    }
-})
-```
-
-**Advanced search with categories, sort, and deal filters**
-
-```
-Business.searchWithTerm("Restaurants", sort: .distance, categories: ["asianfusion", "burgers"], deals: true) { (businesses: [Business]!, error: Error!) -> Void in
-
-    for business in businesses {
-        print(business.name!)
-        print(business.address!)
-    }
-}
-```
-=======
 # Project 3 - *Yelp*
 
 **Yelp** is a Yelp search app using the [Yelp API](http://www.yelp.com/developers/documentation/v2/search_api).
 
-Time spent: **X** hours spent in total
+Time spent: **2 1/2** hours spent in total
 
 ## User Stories
 
 The following **required** functionality is completed:
 
-- [ ] Table rows for search results should be dynamic height according to the content height. (3pt)
-- [ ] Custom cells should have the proper Auto Layout constraints. (+5pt)
-- [ ] Search bar should be in the navigation bar (doesn't have to expand to show location like the real Yelp app does). (+2pt)
+- [X] Table rows for search results should be dynamic height according to the content height. (3pt)
+- [X] Custom cells should have the proper Auto Layout constraints. (+5pt)
+- [X] Search bar should be in the navigation bar (doesn't have to expand to show location like the real Yelp app does). (+2pt)
 
 The following **stretch** features are implemented:
 
@@ -60,16 +24,12 @@ The following **additional** features are implemented:
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1.
-2.
+1. constraints
+2. following the video since video was out of date
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
@@ -90,4 +50,3 @@ Describe any challenges encountered while building the app.
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
->>>>>>> 2a4cc0dacea70b37b4a42b3504d58e75e53c68de
